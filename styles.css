@@ -243,6 +243,11 @@ footer {
     body {
         background-color: #fff;
     }
+
+    .system img {
+        max-width: 752px;
+    }
+
     .computer-txt-div {
         display: flex;
     }
