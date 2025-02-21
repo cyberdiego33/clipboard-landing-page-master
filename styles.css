@@ -1,0 +1,264 @@
+/* bai-jamjuree-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Bai Jamjuree';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/bai-jamjuree-v11-latin/bai-jamjuree-v11-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* bai-jamjuree-600 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Bai Jamjuree';
+    font-style: normal;
+    font-weight: 600;
+    src: url('fonts/bai-jamjuree-v11-latin/bai-jamjuree-v11-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+:root {
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+
+
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+    --footer-Blue: hsl(220, 23%, 97%);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+body {
+    font-family: 'Bai Jamjuree', cursive;
+    background: 
+        url(images/bg-header-mobile.png) no-repeat top/contain;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 375px;
+    padding: 100px 2rem;
+    text-align: center;
+}
+.top-logo img {
+    margin: 0 auto 100px;
+    width: fit-content;
+
+}
+
+
+.system img {
+    width: 100%;
+    max-width: 840px;
+    display: block;
+    margin: 0 auto;
+}
+
+.large-txt {
+    color: var(--Dark-Grayish-Blue);
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 1.1rem;
+}
+
+.small-txt {
+    color: var(--Grayish-Blue);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+button {
+    font-family: inherit;
+    width: 310px;
+    font-size: 18px;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 50px;
+    border: none;
+    font-weight: 600;
+    display: block;
+    text-decoration: none;
+    transition: box-shadow 0.3s ease;
+}
+button:hover,
+button:active {
+    transform: scale(0.95);
+}
+.ios {
+    margin-bottom: 2rem;
+    background-color: var(--Strong-Cyan);
+    box-shadow: 0px 5px 10px hsla(171, 66%, 44%, 0.4);
+}
+.mac {
+    background-color: var(--Light-Blue);
+    box-shadow: 0px 4px 10px hsla(233, 100%, 69%, 0.5);
+}
+.ios:hover {
+    box-shadow: 0px 6px 12px hsla(171, 66%, 44%, 0.6);
+}
+.mac:hover {
+    box-shadow: 0px 6px 12px hsla(233, 100%, 69%, 0.6);
+}
+.buttons-div {
+    margin: 50px auto 120px;
+}
+
+.computer-img {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.icloud {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.access {
+    margin-top: 150px;
+}
+.desktop-img {
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+.supercharge {
+    margin-bottom: 100px;
+}
+
+.with-icon img{
+    margin-bottom: 40px;
+}
+.plain {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+
+.company-icons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    margin-bottom: 150px;
+}
+.icons-png {
+    margin: 25px;
+}
+
+.buttons-div .bottom-btn {
+    margin-bottom: 100px;
+}
+
+footer {
+    padding: 50px;
+    text-align: center;
+    background-color: var(--footer-Blue);
+}
+.footer-logo img {
+    width: 70px;
+    height: 70px;
+}
+.footer-quest {
+    margin: 50px auto;
+}
+.footer-quest p {
+    color: var(--Dark-Grayish-Blue);
+    font-size: 20px;
+    font-weight: 600;
+    margin: 25px;
+}
+.social-logos img {
+    width: 24px;
+    height: 24px;
+    margin: 0 25px;
+}
+
+
+@media (min-width: 900px) {
+    body {
+        background: 
+            url(images/bg-header-desktop.png) no-repeat top/contain;
+        ;
+    }
+
+    .centered {
+        margin-right: auto;
+        margin-left: auto;
+        width: 600px;
+    }
+
+    .medium-width {
+        width: 350px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .container {
+        max-width: 100%;
+    }
+    button {
+        width: fit-content;
+        padding: 1rem 2rem;
+    }
+    .buttons-div {
+        width: 450px;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .company-icons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer {
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+    }
+    .footer-quest {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    .footer-quest p {
+        margin-top: 0;
+    }
+    .social-logos {
+        width: 150px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .social-logos img {
+        margin: 0;
+    }
+   
+}
+
+@media (min-width: 1400px) {
+    body {
+        background-color: #fff;
+    }
+    .computer-txt-div {
+        display: flex;
+    }
+    .computer-txt {
+        margin-top: 50px;
+        margin-left: 50px;
+        text-align: left;
+    }
+
+    .with-icon-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .plain {
+        margin: 0;
+    }
+
+    
+}
